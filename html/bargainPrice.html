@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>特价</title>
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/swiper.min.js"></script>
+</head>
+<body>
+  <header>
+    <h4 class="title">特价</h4>
+  </header>
+  <section class="main">
+    <nav class="tab">
+      <ul>
+        <li class="active">
+          <a>人气</a>
+        </li>
+        <li>
+          <a class="tab-price">
+            价格 
+            <img src="../imgs/sj_t.png" class="sj_t">
+            <img src="../imgs/sj_b.png" class="sj_b">
+          </a>
+        </li>
+        <li>
+          <a>销量</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="container">
+            <ul class="home-list">
+              <li>
+                <a href="" class="clearfix">
+                  <img src="../imgs/home.jpg" class="pull-left img">
+                  <div class="pull-left">
+                    <div class="title">人民银行附近出租</div>
+                    <div class="desc">凤凰县/1室1厅1卫</div>
+                    <div class="price">面议</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                  <a href="" class="clearfix">
+                    <img src="../imgs/home.jpg" class="pull-left img">
+                    <div class="pull-left">
+                      <div class="title">人民银行附近出租</div>
+                      <div class="desc">凤凰县/1室1厅1卫</div>
+                      <div class="price">面议</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="clearfix">
+                    <img src="../imgs/home.jpg" class="pull-left img">
+                    <div class="pull-left">
+                      <div class="title">人民银行附近出租</div>
+                      <div class="desc">凤凰县/1室1厅1卫</div>
+                      <div class="price">面议</div>
+                    </div>
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+              <ul class="home-list">
+                <li>
+                  <a href="" class="clearfix">
+                    <img src="../imgs/home.jpg" class="pull-left img">
+                    <div class="pull-left">
+                      <div class="title">人民银行附近出租</div>
+                      <div class="desc">凤凰县/1室1厅1卫</div>
+                      <div class="price">面议</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                    <a href="" class="clearfix">
+                      <img src="../imgs/home.jpg" class="pull-left img">
+                      <div class="pull-left">
+                        <div class="title">人民银行附近出租</div>
+                        <div class="desc">凤凰县/1室1厅1卫</div>
+                        <div class="price">面议</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="clearfix">
+                      <img src="../imgs/home.jpg" class="pull-left img">
+                      <div class="pull-left">
+                        <div class="title">人民银行附近出租</div>
+                        <div class="desc">凤凰县/1室1厅1卫</div>
+                        <div class="price">面议</div>
+                      </div>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+              <ul class="home-list">
+                <li>
+                  <a href="" class="clearfix">
+                    <img src="../imgs/home.jpg" class="pull-left img">
+                    <div class="pull-left">
+                      <div class="title">人民银行附近出租</div>
+                      <div class="desc">凤凰县/1室1厅1卫</div>
+                      <div class="price">面议</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                    <a href="" class="clearfix">
+                      <img src="../imgs/home.jpg" class="pull-left img">
+                      <div class="pull-left">
+                        <div class="title">人民银行附近出租</div>
+                        <div class="desc">凤凰县/1室1厅1卫</div>
+                        <div class="price">面议</div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="clearfix">
+                      <img src="../imgs/home.jpg" class="pull-left img">
+                      <div class="pull-left">
+                        <div class="title">人民银行附近出租</div>
+                        <div class="desc">凤凰县/1室1厅1卫</div>
+                        <div class="price">面议</div>
+                      </div>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $(function(){
+      var swiper = new Swiper('.swiper-container', {
+        on: {
+          slideChangeTransitionStart: function(){
+            var index = this.activeIndex;
+            $(".tab ul li:eq("+index+")").addClass("active").siblings().removeClass("active");
+          }
+        }
+      });
+      // 点击tab的时候
+      $(".tab ul li").click(function(){
+        var index = $(".tab ul li").index(this);
+        $(this).addClass("active").siblings().removeClass("active");
+        swiper.slideTo(index, 1000, false);
+      });
+    });
+  </script>
+</body>
+</html>

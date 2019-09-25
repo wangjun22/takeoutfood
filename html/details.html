@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>详情</title>
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <script src="../js/swiper.min.js"></script>
+</head>
+<body class="bg">
+  <header>
+    <h4 class="title">详情</h4>
+  </header>
+  <section class="swiper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../imgs/sw01.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../imgs/sw01.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../imgs/sw01.png">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="details-title">
+    <div class="clearfix">
+      <div class="pull-left title">
+        人民银行附近有房出租
+      </div>
+      <div class="pull-right img">
+        <img src="../imgs/jubao.png">
+        <div class="desc">举报</div>
+      </div>
+    </div>
+    <div class="label"><span>个人</span></div>
+  </section>
+  <section>
+    <ul class="flex">
+      <li class="item">
+        <div class="top">租金</div>
+        <div class="bottom price">面议</div>
+      </li>
+      <li class="item">
+        <div class="top">户型</div>
+        <div class="bottom">1室1厅1卫</div>
+      </li>
+      <li class="item">
+        <div class="top">面积</div>
+        <div class="bottom">120m<sup>2</sup></div>
+      </li>
+    </ul>
+  </section>
+  <section class="details-info">
+    <ul class="flex">
+      <li class="item">
+        <div><label>类型：</label>整租</div>
+        <div><label>装修：</label>整租</div>
+        <div><label>压付：</label>整租</div>
+      </li>
+      <li class="item">
+        <div><label>楼层：</label>整租</div>
+        <div><label>朝向：</label>整租</div>
+        <div><label>发布：</label>2019-09-19</div>
+      </li>
+    </ul>
+  </section>
+  <section class="addr"><label>小区/地址：</label>凤凰县-城中区</section>
+  <!-- <section class="split"></section> -->
+
+  <img src="../imgs//fabu.png" class="publish">  
+  <footer>
+    <ul class="flex">
+      <li class="flex-1">
+        <a href="">
+          <img src="../imgs/caret.png">
+          <div>收藏</div>
+        </a>
+      </li>
+      <li class="flex-2 chat">
+        <a href="">
+          <img src="../imgs/liaotian.png" alt="">
+          <span>聊天</span>
+        </a>
+      </li>
+      <li class="flex-2 tel">
+        <a href="">
+          <img src="../imgs/tel.png" alt="">
+          <span>电话</span>
+        </a>
+      </li>
+    </ul>
+  </footer> 
+  <script>
+  window.onload = function(){
+    // 初始化轮播图
+    var swiper = new Swiper('.swiper-container', {
+      autoplay: false,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      }
+    });
+  };
+  </script>
+</body>
+</html>

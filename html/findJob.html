@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我要找工作</title>
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <script src="../js/swiper.min.js"></script>
+  <script src="../js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+  <header>
+    <h4 class="title">我要找工作</h4>
+  </header>
+  <section class="work-bg">
+    <img src="../imgs/bg2.png">
+  </section>
+  <section class="main work-main">
+      <nav class="tab">
+        <ul>
+          <li class="active">
+            <a>感兴趣的职位</a>
+          </li>
+          <li>
+            <a class="tab-price">
+              我的申请记录
+            </a>
+          </li>
+          <li>
+            <a>我收藏的职位</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container job-hot">
+              <ul class="job-list">
+                <li class="clearfix relative">
+                  <div class="pull-left">
+                    <div class="title"><span class="tips">置顶</span> <span>前台</span></div>
+                    <div class="price">￥3000~5000</div>
+                    <div class="shop-name">遗墨主题酒店</div>
+                    <div class="label">
+                      <span class="blue">餐补</span>
+                      <span class="orange">包住</span>
+                      <span class="red">员工旅游</span>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <div class="time">3天前</div>
+                    <a href="" class="job-apply">申请职位</a>
+                  </div>
+                </li>
+                <li class="clearfix relative">
+                  <div class="pull-left">
+                    <div class="title"><span class="tips">置顶</span> <span>前台</span></div>
+                    <div class="price">￥3000~5000</div>
+                    <div class="shop-name">遗墨主题酒店</div>
+                    <div class="label">
+                      <span class="blue">餐补</span>
+                      <span class="orange">包住</span>
+                      <span class="red">员工旅游</span>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <div class="time">3天前</div>
+                    <a href="" class="job-apply">申请职位</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container job-hot">
+              <ul class="job-list">
+                <li class="clearfix relative">
+                  <div class="pull-left">
+                    <div class="title"><span class="tips">置顶</span> <span>前台</span></div>
+                    <div class="price">￥3000~5000</div>
+                    <div class="shop-name">遗墨主题酒店</div>
+                    <div class="label">
+                      <span class="blue">餐补</span>
+                      <span class="orange">包住</span>
+                      <span class="red">员工旅游</span>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <div class="time">3天前</div>
+                    <a href="" class="job-apply">申请职位</a>
+                  </div>
+                </li>
+                <li class="clearfix relative">
+                  <div class="pull-left">
+                    <div class="title"><span class="tips">置顶</span> <span>前台</span></div>
+                    <div class="price">￥3000~5000</div>
+                    <div class="shop-name">遗墨主题酒店</div>
+                    <div class="label">
+                      <span class="blue">餐补</span>
+                      <span class="orange">包住</span>
+                      <span class="red">员工旅游</span>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <div class="time">3天前</div>
+                    <a href="" class="job-apply">申请职位</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container job-hot">
+              <ul class="job-list">
+                <li class="clearfix relative">
+                  <div class="pull-left">
+                    <div class="title"><span class="tips">置顶</span> <span>前台</span></div>
+                    <div class="price">￥3000~5000</div>
+                    <div class="shop-name">遗墨主题酒店</div>
+                    <div class="label">
+                      <span class="blue">餐补</span>
+                      <span class="orange">包住</span>
+                      <span class="red">员工旅游</span>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <div class="time">3天前</div>
+                    <a href="" class="job-apply">申请职位</a>
+                  </div>
+                </li>
+                <li class="clearfix relative">
+                  <div class="pull-left">
+                    <div class="title"><span class="tips">置顶</span> <span>前台</span></div>
+                    <div class="price">￥3000~5000</div>
+                    <div class="shop-name">遗墨主题酒店</div>
+                    <div class="label">
+                      <span class="blue">餐补</span>
+                      <span class="orange">包住</span>
+                      <span class="red">员工旅游</span>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <div class="time">3天前</div>
+                    <a href="" class="job-apply">申请职位</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(function(){
+        var swiper = new Swiper('.swiper-container', {
+          on: {
+            slideChangeTransitionStart: function(){
+              var index = this.activeIndex;
+              $(".tab ul li:eq("+index+")").addClass("active").siblings().removeClass("active");
+            }
+          }
+        });
+        // 点击tab的时候
+        $(".tab ul li").click(function(){
+          var index = $(".tab ul li").index(this);
+          $(this).addClass("active").siblings().removeClass("active");
+          swiper.slideTo(index, 1000, false);
+        });
+      });
+    </script>
+</body>
+</html>

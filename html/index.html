@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>酒店精选</title>
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <script src="../js/swiper.min.js"></script>
+</head>
+<body>
+  <header>
+    <h4 class="title">酒店精选</h4>
+  </header>
+  <section class="swiper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../imgs/sw01.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../imgs/sw01.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="../imgs/sw01.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 导航条 -->
+  <nav class="nav">
+    <ul>
+      <li>
+        <img src="../imgs/hotel.png">
+        <div>今日特价</div>
+      </li>
+      <li>
+        <img src="../imgs/hotel.png">
+        <div>短租</div>
+      </li>
+      <li>
+        <img src="../imgs/hotel.png">
+        <div>精品酒店</div>
+      </li>
+      <li>
+        <img src="../imgs/hotel.png">
+        <div>钟点房</div>
+      </li>
+      <li>
+        <img src="../imgs/hotel.png">
+        <div>情侣精选</div>
+      </li>
+    </ul>
+  </nav>
+  <!-- 列表 -->
+  <section class="list">
+    <ul>
+      <li><a href=""><img src="../imgs/sw01.png"></a></li>
+      <li><a href=""><img src="../imgs/sw01.png"></a></li>
+      <li><a href=""><img src="../imgs/sw01.png"></a></li>
+      <li><a href=""><img src="../imgs/sw01.png"></a></li>
+      <li><a href=""><img src="../imgs/sw01.png"></a></li>
+    </ul>
+  </section>
+  <script>
+  window.onload = function(){
+    // 初始化轮播图
+    var swiper = new Swiper('.swiper-container', {
+      autoplay: true,
+      loop: true
+    });
+  };
+  </script>
+</body>
+</html>
